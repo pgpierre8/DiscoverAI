@@ -1,0 +1,706 @@
+/* Home Page */
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header:before,
+header:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 640px;
+    background-color: black;
+    margin: 2px 0;
+    position: absolute;
+    right: 5%;
+}
+
+header:before {
+    top: 4;
+    right: 0;
+}
+
+header:after {
+    bottom: 4;
+    right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+}
+
+.background-container {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.background-container-1 {
+    background-image: url('Backgroundtop.png');
+    min-height: 500px;
+}
+
+.background-container-2 {
+    background-image: url('Backgroundbottom.png');
+    min-height: 600px; /* Make the bottom background picture longer */
+    padding-top: 0;
+    margin-top: -4px;
+}
+
+.discover-ai {
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 30px;
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    right: 25.5%; /* Shift 'WELCOME!' to the top left of the paragraph */
+    top: 20px; /* Shift the paragraph down just a bit */
+}
+
+.welcome {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: normal;
+    width: 35%;
+    position: absolute;
+    right: 5%;
+    top: 110px; /* Shift the paragraph down just a bit */
+}
+
+footer {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Page */
+
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+}
+
+/* About Header */ 
+
+.about-header {
+    background-image: url('Header_About.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+/* About Section */ 
+
+.about-section {
+    padding: 2rem;
+    width: 85%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section .black-bar {
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.about-section p {
+}
+
+.about-section p + p {
+    margin-top: 2rem;
+}
+
+.about-section h3 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-section .black-bar-small {
+    background-color: black;
+    height: 3px;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.about-section .machine-learning p {
+}
+
+.about-section .machine-learning p + p {
+    margin-top: 2rem;
+}
+
+/* Progress Section */ 
+
+.progress {
+    background-image: url('Bottom_About.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .progress-header {
+    margin-bottom: 2rem;
+  }
+  
+  .progress-header h2 {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  .progress-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-links-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .progress-links-row a {
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+  }
+  
+  .progress-links-row a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+
+
+footer {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Timeline Page */
+
+.timeline-page {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(204, 228, 247, 1) 25%, rgba(224, 203, 243, 1) 50%, rgba(255, 214, 214, 1) 75%, rgba(255, 238, 196, 1) 100%);
+    min-height: 100vh;
+    z-index: -1;
+}
+
+/* Title container */
+.title-container {
+    position: relative;
+    min-height: 30vh; /* Adjust this value to control the space above the title */
+}
+
+/* Title */
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Timeline */
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.timeline-event {
+    flex: 0 0 calc(50% - 4rem);
+    height: 300px; /* Fixed height for all event boxes */
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-container::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: transparent;
+}
+
+.timeline-event:nth-child(even) {
+    margin-top: 60px; /* Adjust this value to control the shift amount */
+}
+
+/* Last event container */
+
+.last-event-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0; /* Removing the margin-top */
+}
+
+.timeline-event:last-child {
+    flex: 0 0 calc(50% - 4rem);
+    margin-left: 3rem;
+    margin-top: 0px; /* Adding the margin-top here */
+}
+
+/* ... Other CSS rules ... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ... Other CSS rules ... */
+
+/* Let's Talk AI Page */
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.blog-posts {
+    width: 100%;
+}
+
+.blog-post {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 2rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+.blog-post img {
+    max-width: 450px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.post-text {
+    max-width: calc(100% - 450px - 1rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem; /* Reduced margin-bottom */
+}
+
+.blog-post .preview {
+    font-size: 0.875rem;
+    color: #777;
+    margin: 0;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-post a:hover {
+    color: #007bff;
+}
+
+.blog-post time {
+    font-style: italic;
+    color: #777;
+}
+
+/* ... Other CSS rules ... */
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blogpost1.html */ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.full-width-image img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+main {
+    max-width: calc(100% - 4in);
+    margin: 0 auto;
+    padding: 2in 2in;
+}
+
+article {
+    border: 2px solid black;
+    padding: 5rem;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    max-width: 85%;
+    height: auto;
+    margin: 1rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HR Page */
+
+/* Navigation bar */
+nav {
+    /* Your existing navigation bar styles */
+}
+
+/* HR page */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Add the new rule for the grey background here */
+body.hr-page {
+    background-color: lightgrey;
+}
+
+.white-box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.white-box {
+    display: flex;
+    background-color: white;
+    padding: 0 2rem;
+    padding-left: 0;
+    margin: 2rem auto;
+    max-width: 130%;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.white-box img {
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.white-box-text {
+    width: 67%;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+.green-columns-container {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 130%;
+}
+
+.green-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.green-column {
+    background-color: lightgreen;
+    width: 45%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.green-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+.video-section {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* ... Other CSS rules ... */
+
+
+
+
+
+
+
+
+
+
+/* Fade-out and Fade-in effect between pages */ 
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
